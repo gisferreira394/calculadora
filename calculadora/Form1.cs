@@ -164,8 +164,8 @@ textBoxResultado.Text += "7";
             }
   else if (operacao == "RAIZ")
             {
+                
 
-                textBoxResultado.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(valor1) * Convert.ToDouble(valor2)));
             }
             else 
             {
@@ -221,10 +221,8 @@ textBoxResultado.Text += "7";
             if (textBoxResultado.Text != "")
             {
                 valor1 = decimal.Parse(textBoxResultado.Text, CultureInfo.InvariantCulture);
-                textBoxResultado.Text = "";
-                operacao = "RAIZ";
-              
-                labeloperacao.Text = "√";
+                textBoxResultado.Text = Convert.ToString(Math.Sqrt(Convert.ToDouble(valor1)));
+                labeloperacao.Text = "";
             }
             else
             {
@@ -236,7 +234,7 @@ textBoxResultado.Text += "7";
         {
             valor1 = (decimal)Math.PI;
             textBoxResultado.Text = valor1.ToString();
-             }
+        }
 
         private void button9_Click(object sender, EventArgs e)
         {
