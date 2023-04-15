@@ -112,7 +112,7 @@ textBoxResultado.Text += "7";
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (textBoxResultado.Text != "") 
+            if (textBoxResultado.Text != "")
             {
                 valor1 = decimal.Parse(textBoxResultado.Text, CultureInfo.InvariantCulture);
                 textBoxResultado.Text = "";
