@@ -117,7 +117,7 @@ textBoxResultado.Text += "7";
                 valor1 = decimal.Parse(textBoxResultado.Text, CultureInfo.InvariantCulture);
                 textBoxResultado.Text = "";
                 operacao = "DIV";
-                labeloperacao.Text = "/":
+                labeloperacao.Text = "/";
             }
             else
             {
