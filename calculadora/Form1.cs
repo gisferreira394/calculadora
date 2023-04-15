@@ -164,9 +164,9 @@ textBoxResultado.Text += "7";
             }
   else if (operacao == "RAIZ")
             {
-                
 
             }
+           
             else 
             {
                 textBoxResultado.Text = Convert.ToString(valor1 / valor2);
@@ -234,6 +234,11 @@ textBoxResultado.Text += "7";
         {
             valor1 = (decimal)Math.PI;
             textBoxResultado.Text = valor1.ToString();
+        }
+
+        private void buttonresto_Click(object sender, EventArgs e)
+        {
+            textBoxResultado.Text = Convert.ToString(valor1 % valor2);
         }
 
         private void button9_Click(object sender, EventArgs e)

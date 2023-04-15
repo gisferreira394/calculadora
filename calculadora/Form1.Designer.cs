@@ -52,6 +52,7 @@
             this.buttonExpo = new System.Windows.Forms.Button();
             this.buttonRaiz = new System.Windows.Forms.Button();
             this.buttonPI = new System.Windows.Forms.Button();
+            this.buttonresto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -365,12 +366,24 @@
             this.buttonPI.UseVisualStyleBackColor = true;
             this.buttonPI.Click += new System.EventHandler(this.buttonPI_Click);
             // 
+            // buttonresto
+            // 
+            this.buttonresto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonresto.Location = new System.Drawing.Point(504, 101);
+            this.buttonresto.Name = "buttonresto";
+            this.buttonresto.Size = new System.Drawing.Size(73, 61);
+            this.buttonresto.TabIndex = 7;
+            this.buttonresto.Text = "Resto";
+            this.buttonresto.UseVisualStyleBackColor = true;
+            this.buttonresto.Click += new System.EventHandler(this.buttonresto_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(531, 424);
+            this.ClientSize = new System.Drawing.Size(600, 424);
+            this.Controls.Add(this.buttonresto);
             this.Controls.Add(this.buttonPI);
             this.Controls.Add(this.buttonRaiz);
             this.Controls.Add(this.buttonExpo);
@@ -429,6 +442,7 @@
         private System.Windows.Forms.Button buttonExpo;
         private System.Windows.Forms.Button buttonRaiz;
         private System.Windows.Forms.Button buttonPI;
+        private System.Windows.Forms.Button buttonresto;
     }
 }
 
